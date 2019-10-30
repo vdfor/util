@@ -1,0 +1,54 @@
+{
+  "name": "@vdfor/util",
+  "version": "0.1.0",
+  "author": "vdfor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdfor/utilt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vdfor/utilt/issues"
+  },
+  "homepage": "https://github.com/vdfor/utilt#readme",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "types": "dist/types/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development rollup -c --watch",
+    "build": "yarn run typing && cross-env NODE_ENV=production rollup -c",
+    "typing": "tsc --allowJs false --declaration --declarationDir dist/types --isolatedModules false --noEmit false --emitDeclarationOnly",
+    "test": "mocha"
+  },
+  "peerDependencies": {
+    "@babel/runtime": ">= 7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/register": "^7.6.2",
+    "@babel/runtime": "^7.6.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2",
+    "rollup": "^1.26.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "typescript": "^3.6.4"
+  }
+}
