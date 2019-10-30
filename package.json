@@ -5,12 +5,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vdfor/utilt.git"
+    "url": "https://github.com/vdfor/util.git"
   },
   "bugs": {
-    "url": "https://github.com/vdfor/utilt/issues"
+    "url": "https://github.com/vdfor/util/issues"
   },
-  "homepage": "https://github.com/vdfor/utilt#readme",
+  "homepage": "https://github.com/vdfor/util#readme",
   "private": false,
   "files": [
     "dist"
