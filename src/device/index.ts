@@ -1,10 +1,4 @@
-export enum PlatformEnvEnum {
-  ALIPAY = 'Alipay',
-  MicroMessenger = 'WeChat',
-  WECHATMINIPROGRAM = 'WeChatMiniProgram',
-  QQ = 'QQ',
-  H5 = 'H5'
-}
+import { PlatformEnvEnum } from '../type';
 
 const getVersion = (label: string): boolean => { // 获取版本号
   if (!window) {
