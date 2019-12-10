@@ -24,17 +24,12 @@
     "typing": "tsc --allowJs false --declaration --declarationDir dist/types --isolatedModules false --noEmit false --emitDeclarationOnly",
     "test": "mocha"
   },
-  "peerDependencies": {
-    "@babel/runtime": ">= 7"
-  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
     "@babel/register": "^7.6.2",
-    "@babel/runtime": "^7.6.3",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.11.7",
     "@typescript-eslint/eslint-plugin": "^2.6.0",

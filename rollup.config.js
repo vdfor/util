@@ -50,7 +50,7 @@ export default {
       exclude: /node_modules/,
       runtimeHelpers: true,
       extensions,
-      babelrc: true,
+      babelrc: false, // use balbel.config.js
     }),
   ],
 };
