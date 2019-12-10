@@ -25,4 +25,4 @@ export const removeHtmlTag = (str: string): string => {
 // 获取两个数之间的随机整数
 export const getRandomRound = (min: number, max: number): number => Math.round(Math.random() * (max - min) + min);
 
-export const pxToRem = (px: number, base: number): string => `${Math.round((px / base) * 1000) / 1000}rem`;
+export const pxTransform = (px: number, base: number): string => `${Math.round((px / base) * 1000) / 1000}rem`;
