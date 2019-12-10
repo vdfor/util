@@ -1,6 +1,4 @@
-import { PlatformEnvEnum } from '../type';
-
-const getVersion = (label: string): boolean => { // 获取版本号
+const getVersionByUserAgent = (label: string): boolean => { // 获取版本号
   if (!window) {
     throw new Error('window is undefined');
   }
@@ -9,18 +7,8 @@ const getVersion = (label: string): boolean => { // 获取版本号
   return !!(info && info.length > 0);
 };
 
-export const isAlipayEnv = (): boolean => getVersion('alipayclient');
+export const isAlipayEnv = (): boolean => getVersionByUserAgent('alipayclient');
 
-export const isWeChatEnv = (): boolean => getVersion('micromessenger');
+export const isWeChatEnv = (): boolean => getVersionByUserAgent('micromessenger');
 
 export const isWeChatMiniProgramEnv = (): boolean => isWeChatEnv() && /miniprogram/.test(window.navigator.userAgent.toLowerCase());
-
-export const getPlatformEnv = (): PlatformEnvEnum => {
-  if (isAlipayEnv()) {
-    return PlatformEnvEnum.ALIPAY;
-  }
-  if (isWeChatEnv()) {
-    return PlatformEnvEnum.MicroMessenger;
-  }
-  return PlatformEnvEnum.H5;
-};

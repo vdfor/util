@@ -20,6 +20,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: ['eslint:recommended', 'airbnb-base', 'plugin:@typescript-eslint/recommended'],
   rules: {
+    'max-len': ['error', 200],
     'no-console': ['off'],
   },
 };
