@@ -10,3 +10,9 @@ export enum LoadActionEnum {
   LOADMORE = 'loadMore',
   RESET = 'reset'
 }
+
+export enum BuildEnvEnum {
+  DEV = 'dev',
+  TEST = 'test',
+  PROD = 'prod'
+}
