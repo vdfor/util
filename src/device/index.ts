@@ -11,4 +11,9 @@ export const isAlipayEnv = (): boolean => getVersionByUserAgent('alipayclient');
 
 export const isWeChatEnv = (): boolean => getVersionByUserAgent('micromessenger');
 
-export const isWeChatMiniProgramEnv = (): boolean => isWeChatEnv() && /miniprogram/.test(window.navigator.userAgent.toLowerCase());
+export const isWeChatMiniProgramEnv = (): boolean => {
+  if (!window) {
+    throw new Error('window is undefined');
+  }
+  return isWeChatEnv() && /miniprogram/.test(window.navigator.userAgent.toLowerCase());
+};
