@@ -1,5 +1,7 @@
 # @vdfor/util
 
+工具包
+
 ## 安装
 
 ```bash
@@ -10,3 +12,4 @@ yarn add @vdfor/util
 npm i @vdfor/util -S
 ```
 
+[文档](https://www.yuque.com/vdfor/aysrac)
