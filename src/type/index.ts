@@ -16,3 +16,9 @@ export enum BuildEnvEnum {
   TEST = 'test',
   PROD = 'prod'
 }
+
+export enum FetchingStateEnum {
+  PENDING = 'pending',
+  SUCCESS = 'success',
+  FAIL = 'fail'
+}
