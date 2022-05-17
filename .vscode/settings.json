@@ -1,11 +1,6 @@
 {
   "editor.tabSize": 2,
-  "eslint.validate": [
-    "javascript",
-    "typescript"
-  ],
-  "eslint.packageManager": "yarn",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+  "npm.packageManager": "yarn",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

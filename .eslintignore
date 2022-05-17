@@ -1,6 +1,0 @@
-node_modules
-dist
-rollup.config.js
-babel-register.js
-.mocharc.js
-!.eslintrc.js

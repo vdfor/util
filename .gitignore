@@ -5,6 +5,11 @@ node_modules
 
 # production
 dist
+es/
+lib/
+
+# coverage
+coverage/
 
 # misc
 .DS_Store
