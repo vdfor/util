@@ -18,5 +18,6 @@
     "strictNullChecks": true,
     "target": "esnext"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["**/__tests__", "setupTests.ts"]
 }

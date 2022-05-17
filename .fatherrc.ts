@@ -1,18 +1,23 @@
+const common = {
+  entry: 'src/index.ts',
+  target: 'node',
+};
+
 export default [
   {
-    entry: 'src/index.ts',
+    ...common,
     esm: {
       type: 'babel',
     },
   },
   {
-    entry: 'src/index.ts',
+    ...common,
     cjs: {
       type: 'babel',
     },
   },
   {
-    entry: 'src/index.ts',
+    ...common,
     umd: {
       minFile: true,
       file: 'index',
